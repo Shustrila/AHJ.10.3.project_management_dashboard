@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="dashboard">
+            <div class="dashboard__widget dashboard__states" data-widget="states">
+                <h3 class="dashboard__widget-title">
+                    States
+                </h3>
+                <div class="dashboard__widget-body">
+                    <div class="dashboard__widget-head">
+                        <p>Project</p>
+                        <p>open</p>
+                    </div>
+                    <ul class="dashboard__widget-list" data-states="list"></ul>
+                </div>
+            </div>
+            <div class="dashboard__widget dashboard__tasks" data-widget="tasks">
+                <h3 class="dashboard__widget-title">
+                    Tasks
+                </h3>
+                <div class="dashboard__widget-body">
+                    <div class="dashboard__widget-head dashboard__tasks-head">
+                        <p class="dashboard__widget-project">
+                            Project:
+                            <div class="dashboard__category">
+                                <p class="dashboard__category-name" data-tasks="name-category"></p>
+                                <ul class="dashboard__category-list dashboard__category-list--hidden"
+                                    data-tasks="list-categories">
+                                </ul>
+                            </div>
+                        </p>
+                    </div>
+                    <ul class="dashboard__widget-list" data-tasks="list"></ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
