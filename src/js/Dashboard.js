@@ -44,7 +44,7 @@ class Dashboard {
         const list = this._nodeWidgetTasks.querySelector('[data-tasks="list-categories"]');
         const listTasks = this._nodeWidgetTasks.querySelector('[data-tasks="list"]');
 
-        nameCategory.addEventListener('click', (e) => {
+        nameCategory.addEventListener('click', () => {
             list.classList.toggle('dashboard__category-list--hidden');
         });
 

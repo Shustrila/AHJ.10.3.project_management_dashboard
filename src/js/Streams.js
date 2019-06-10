@@ -12,7 +12,6 @@ class Stream {
                 quantity.innerHTML = tasks.filter(item => !item.done).length;
             },
             error => of(error),
-            () => console.log('complete!')
         );
     }
 }
